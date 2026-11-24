@@ -14,14 +14,14 @@ import time
 
 import requests
 
-PRODUCT_ID = os.environ.get("PRODUCT_ID", "210335519")
+PRODUCT_ID = os.environ.get("PRODUCT_ID", "155146234")
 STORE = os.environ.get("STORE", "BE")
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "")
 LOOP_SECONDS = int(os.environ.get("LOOP_SECONDS", "0"))
 INTERVAL = int(os.environ.get("INTERVAL", "30"))
 DEBUG = os.environ.get("DEBUG") == "1"
 
-PRODUCT_URL = f"https://www.asos.com/nl/prd/{PRODUCT_ID}"
+PRODUCT_URL = f"https://www.asos.com/asos-gifting/asos-face-body-advent-calendar-2026-73-saving/prd/210335519?xaffid=17294&r=1"
 API_URL = "https://www.asos.com/api/product/catalogue/v3/stockprice"
 HEADERS = {
     "User-Agent": (
